@@ -10,11 +10,11 @@ app.get('/', async (req, res) => {
   console.log(req.query['hub.challenge']);
   let para = new URLSearchParams();
   if (req.query['hub.mode'] == "subscribe") {
-  	para.append('Body', 'Got a subscribe reqeust with code: '+req.query['hub.challenge']);
+  	para.append('Body', 'Got a subscribe request with code: '+req.query['hub.challenge']);
   } else {
-	para.append('Body', 'Got another reqesut with the body: '+req.body);
-	console.log('Got another reqesut with the body: '+req.body)
-	console.log('Got another reqesut with the body: '+JSON.stringify(req.body))
+	para.append('Body', 'Got another request with the body: '+req.body);
+	console.log('Got another request with the body: '+req.body)
+	console.log('Got another request with the body: '+JSON.stringify(req.body))
   }
   para.append('From', "+14157413728");
   para.append('To', "+31622339914");
