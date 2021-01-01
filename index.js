@@ -11,8 +11,10 @@ app.get('/', async (req, res) => {
   let para = new URLSearchParams();
   if (req.query['hub.mode'] == "subscribe") {
   	para.append('Body', 'Got a subscribe request with code: '+req.query['hub.challenge']);
+  } else if (req.query['hub.mode'] == "unsubscribe") {
+    	para.append('Body', 'Got a unsubscribe request with code: '+req.query['hub.challenge']+" and with the topic: "+req.query['hub.topic'].split("channel_id")[1]);
   } else {
-	para.append('Body', 'Got another request with the body: '+req.body);
+	para.append('Body', 'Got another request with the body: '+JSON.stringify(req.body));
 	console.log('Got another request with the body: '+req.body)
 	console.log('Got another request with the body: '+JSON.stringify(req.body))
   }
