@@ -7,7 +7,7 @@ const port = process.env.PORT || 5000
 app.get('/', async (req, res) => {
   console.log(req.query['hub.challenge']);
   let para = new URLSearchParams();
-  if req.query['hub.mode'] == "subscribe" {
+  if (req.query['hub.mode'] == "subscribe") {
   	para.append('Body', 'Got a subscribe reqeust with code: '+req.query['hub.challenge']);
   } else {
 	para.append('Body', 'Got a othre reqesut with the body: '+req.body);

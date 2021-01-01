@@ -1,5 +1,5 @@
+nu=$(date +"%m-%d-%Y;%H:%M")
 git add .
-git commit -m "final commit"
+git commit -m "One of the final commit at ${nu}"
 git branch -M main
-#git remote add MyTube https://github.com/oliverwk/my-tube.git
 git push -u MyTube main
