@@ -13,6 +13,7 @@ app.get('/', async (req, res) => {
   	para.append('Body', 'Got a subscribe reqeust with code: '+req.query['hub.challenge']);
   } else {
 	para.append('Body', 'Got another reqesut with the body: '+req.body);
+	console.log('Got another reqesut with the body: '+req.body)
   }
   para.append('From', "+14157413728");
   para.append('To', "+31622339914");
