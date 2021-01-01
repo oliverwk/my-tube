@@ -4,7 +4,7 @@ var bodyParser = require('body-parser')
 const { URLSearchParams } = require('url');
 const app = express()
 const port = process.env.PORT || 5000
-app.use(bodyParser.text({ type: 'text/html' }))
+app.use(bodyParser.text())
 
 app.get('/', async (req, res) => {
   console.log(req.query['hub.challenge']);
@@ -14,6 +14,7 @@ app.get('/', async (req, res) => {
   } else {
 	para.append('Body', 'Got another reqesut with the body: '+req.body);
 	console.log('Got another reqesut with the body: '+req.body)
+	console.log('Got another reqesut with the body: '+JSON.stringify(req.body))
   }
   para.append('From', "+14157413728");
   para.append('To', "+31622339914");
@@ -21,7 +22,7 @@ app.get('/', async (req, res) => {
     method: 'POST',
     body: para,
     headers: {
-     'Authorization': 'Basic '+process.env.bs64-Twilio
+     'Authorization': 'Basic '+process.env.bs64_Twilio
      }
   });
   console.log(response.status);
