@@ -1,8 +1,10 @@
 const express = require('express')
 var fetch = require('node-fetch');
+var bodyParser = require('body-parser')
 const { URLSearchParams } = require('url');
 const app = express()
 const port = process.env.PORT || 5000
+app.use(bodyParser.text({ type: 'text/html' }))
 
 app.get('/', async (req, res) => {
   console.log(req.query['hub.challenge']);
@@ -10,7 +12,7 @@ app.get('/', async (req, res) => {
   if (req.query['hub.mode'] == "subscribe") {
   	para.append('Body', 'Got a subscribe reqeust with code: '+req.query['hub.challenge']);
   } else {
-	para.append('Body', 'Got a othre reqesut with the body: '+req.body);
+	para.append('Body', 'Got another reqesut with the body: '+req.body);
   }
   para.append('From', "+14157413728");
   para.append('To', "+31622339914");
