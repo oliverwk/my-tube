@@ -6,7 +6,7 @@ const app = express()
 const port = process.env.PORT || 5000
 app.use(bodyParser.text())
 
-app.get('/', async (req, res) => {
+app.all('/', async (req, res) => {
   console.log(req.query['hub.challenge']);
   let para = new URLSearchParams();
   if (req.query['hub.mode'] == "subscribe") {
