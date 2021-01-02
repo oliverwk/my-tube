@@ -1,10 +1,10 @@
-const express = require('express')
+const express = require('express');
 var fetch = require('node-fetch');
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
 const { URLSearchParams } = require('url');
-const app = express()
-const port = process.env.PORT || 5000
-app.use(bodyParser.text())
+const app = express();
+const port = process.env.PORT;
+app.use(bodyParser.text({type:"*/*"}));
 
 app.all('/', async (req, res) => {
   console.log(req.query['hub.challenge']);
@@ -14,9 +14,8 @@ app.all('/', async (req, res) => {
   } else if (req.query['hub.mode'] == "unsubscribe") {
     	para.append('Body', 'Got a unsubscribe request with code: '+req.query['hub.challenge']+" and with the topic: "+req.query['hub.topic'].split("channel_id")[1]);
   } else {
-	para.append('Body', 'Got another request with the body: '+JSON.stringify(req.body));
-	console.log('Got another request with the body: '+req.body)
-	console.log('Got another request with the body: '+JSON.stringify(req.body))
+    	para.append('Body', 'Got another request with the body: '+JSON.stringify(req.body));
+    	console.log('Got another request with the body: '+req.body)
   }
   para.append('From', "+14157413728");
   para.append('To', "+31622339914");
