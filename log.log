@@ -1,0 +1,100 @@
+2021-01-01T18:02:26.647099+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2021-01-01T18:02:26.769145+00:00 heroku[web.1]: Process exited with status 143
+2021-01-01T18:02:27.626620+00:00 heroku[web.1]: Restarting
+2021-01-01T18:02:27.992053+00:00 heroku[web.1]: Starting process with command `node index.js`
+2021-01-01T18:02:30.281708+00:00 heroku[web.1]: Starting process with command `node index.js`
+2021-01-01T18:02:31.345156+00:00 app[web.1]: Tube app listening at http://localhost:34880
+2021-01-01T18:02:33.141541+00:00 app[web.1]: Tube app listening at http://localhost:32794
+2021-01-01T18:02:34.485233+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2021-01-01T18:02:34.609081+00:00 heroku[web.1]: State changed from starting to up
+2021-01-01T18:02:34.618046+00:00 heroku[web.1]: Process exited with status 143
+2021-01-01T18:03:34.720931+00:00 app[web.1]: 10754827839416874099
+2021-01-01T18:03:35.250693+00:00 app[web.1]: 201
+2021-01-01T18:03:35.279645+00:00 heroku[router]: at=info method=GET path="/?hub.topic=https://www.youtube.com/xml/feeds/videos.xml%3Fchannel_id%3DUCXuqSBlHAE6Xw-yeJA0Tunw&hub.challenge=10754827839416874099&hub.mode=subscribe&hub.lease_seconds=432000" host=ollen-king-best.herokuapp.com request_id=bc512acb-223d-4bc6-8260-9ee5ec09912c fwd="74.125.210.127" dyno=web.1 connect=1ms service=580ms status=200 bytes=220 protocol=https
+2021-01-01T18:10:13.000000+00:00 app[api]: Build started by user oli4.games@hotmail.com
+2021-01-01T18:10:33.000000+00:00 app[api]: Build succeeded
+2021-01-01T18:10:33.166232+00:00 app[api]: Deploy 59435135 by user oli4.games@hotmail.com
+2021-01-01T18:10:33.166232+00:00 app[api]: Release v13 created by user oli4.games@hotmail.com
+2021-01-01T18:10:34.515113+00:00 heroku[web.1]: Restarting
+2021-01-01T18:10:34.547858+00:00 heroku[web.1]: State changed from up to starting
+2021-01-01T18:10:36.130594+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2021-01-01T18:10:36.245212+00:00 heroku[web.1]: Process exited with status 143
+2021-01-01T18:10:36.685715+00:00 heroku[web.1]: Starting process with command `node index.js`
+2021-01-01T18:10:38.739344+00:00 app[web.1]: Tube app listening at http://localhost:14548
+2021-01-01T18:10:38.808047+00:00 heroku[web.1]: State changed from starting to up
+2021-01-01T18:28:29.725578+00:00 app[web.1]: 5544394856832781210
+2021-01-01T18:28:30.165178+00:00 app[web.1]: 201
+2021-01-01T18:28:30.168071+00:00 heroku[router]: at=info method=GET path="/?hub.topic=https://www.youtube.com/xml/feeds/videos.xml%3Fchannel_id%3DUCeeFfhMcJa1kjtfZAGskOCA&hub.challenge=5544394856832781210&hub.mode=subscribe&hub.lease_seconds=432000" host=ollen-king-best.herokuapp.com request_id=12f6a5c3-bdd0-40ba-8939-0aa703478e4e fwd="66.249.93.54" dyno=web.1 connect=0ms service=448ms status=200 bytes=219 protocol=https
+2021-01-01T18:51:24.202016+00:00 app[web.1]: 2389724619822703443
+2021-01-01T18:51:24.202120+00:00 app[web.1]: Got another request with the body: [object Object]
+2021-01-01T18:51:24.202214+00:00 app[web.1]: Got another request with the body: {}
+2021-01-01T18:51:24.633500+00:00 app[web.1]: 201
+2021-01-01T18:51:24.634121+00:00 heroku[router]: at=info method=GET path="/?hub.topic=https://www.youtube.com/xml/feeds/videos.xml%3Fchannel_id%3DUCWr0mx597DnSGLFk1WfvSkQ&hub.challenge=2389724619822703443&hub.mode=unsubscribe" host=ollen-king-best.herokuapp.com request_id=1c9d2283-b0a0-4495-8110-27ab0fa32033 fwd="66.102.6.57" dyno=web.1 connect=0ms service=434ms status=200 bytes=219 protocol=https
+2021-01-01T19:00:27.000000+00:00 app[api]: Build started by user oli4.games@hotmail.com
+2021-01-01T19:00:55.000000+00:00 app[api]: Build succeeded
+2021-01-01T19:00:55.366380+00:00 app[api]: Deploy 34324806 by user oli4.games@hotmail.com
+2021-01-01T19:00:55.366380+00:00 app[api]: Release v14 created by user oli4.games@hotmail.com
+2021-01-01T19:00:56.645258+00:00 heroku[web.1]: Restarting
+2021-01-01T19:00:56.646992+00:00 heroku[web.1]: State changed from up to starting
+2021-01-01T19:00:57.572585+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2021-01-01T19:00:57.660395+00:00 heroku[web.1]: Process exited with status 143
+2021-01-01T19:00:58.643887+00:00 heroku[web.1]: Starting process with command `node index.js`
+2021-01-01T19:01:00.904166+00:00 app[web.1]: Tube app listening at http://localhost:24969
+2021-01-01T19:01:01.754929+00:00 heroku[web.1]: State changed from starting to up
+2021-01-01T19:33:57.105958+00:00 heroku[web.1]: Idling
+2021-01-01T19:33:57.107901+00:00 heroku[web.1]: State changed from up to down
+2021-01-01T19:33:57.955681+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2021-01-01T19:33:58.049047+00:00 heroku[web.1]: Process exited with status 143
+2021-01-02T00:57:20.547195+00:00 heroku[web.1]: Unidling
+2021-01-02T00:57:20.577309+00:00 heroku[web.1]: State changed from down to starting
+2021-01-02T00:57:23.137587+00:00 heroku[web.1]: Starting process with command `node index.js`
+2021-01-02T00:57:26.152565+00:00 app[web.1]: Tube app listening at http://localhost:44860
+2021-01-02T00:57:27.459838+00:00 heroku[web.1]: State changed from starting to up
+2021-01-02T00:57:28.650134+00:00 heroku[router]: at=info method=POST path="/" host=ollen-king-best.herokuapp.com request_id=ea8710d2-5f32-4eed-aebd-80357348491d fwd="66.249.84.184" dyno=web.1 connect=0ms service=19ms status=404 bytes=384 protocol=https
+2021-01-02T00:57:28.710530+00:00 heroku[router]: at=info method=POST path="/" host=ollen-king-best.herokuapp.com request_id=0548b1d2-db98-42cd-abde-e5871c9cd473 fwd="66.249.84.179" dyno=web.1 connect=1ms service=3ms status=404 bytes=384 protocol=https
+2021-01-02T01:33:22.426014+00:00 heroku[web.1]: Idling
+2021-01-02T01:33:22.430210+00:00 heroku[web.1]: State changed from up to down
+2021-01-02T01:33:23.375184+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2021-01-02T01:33:23.467536+00:00 heroku[web.1]: Process exited with status 143
+2021-01-02T01:34:37.711268+00:00 heroku[web.1]: Unidling
+2021-01-02T01:34:37.725717+00:00 heroku[web.1]: State changed from down to starting
+2021-01-02T01:34:40.727496+00:00 heroku[web.1]: Starting process with command `node index.js`
+2021-01-02T01:34:44.433475+00:00 app[web.1]: Tube app listening at http://localhost:15275
+2021-01-02T01:34:45.213710+00:00 heroku[web.1]: State changed from starting to up
+2021-01-02T01:34:45.862853+00:00 heroku[router]: at=info method=POST path="/" host=ollen-king-best.herokuapp.com request_id=0c5c11e2-1483-456c-a96f-3bd04e4b90a8 fwd="66.249.84.166" dyno=web.1 connect=3ms service=25ms status=404 bytes=384 protocol=https
+2021-01-02T01:55:46.630542+00:00 heroku[router]: at=info method=POST path="/" host=ollen-king-best.herokuapp.com request_id=e4f89c2e-4489-484b-9fd7-66ff9a06778c fwd="66.249.84.183" dyno=web.1 connect=1ms service=4ms status=404 bytes=384 protocol=https
+2021-01-02T01:59:18.765263+00:00 heroku[router]: at=info method=POST path="/" host=ollen-king-best.herokuapp.com request_id=b538f0c3-857e-45ce-bdaa-2205d60c2d2e fwd="66.249.84.190" dyno=web.1 connect=1ms service=4ms status=404 bytes=384 protocol=https
+2021-01-02T02:34:54.188936+00:00 heroku[web.1]: Idling
+2021-01-02T02:34:54.191286+00:00 heroku[web.1]: State changed from up to down
+2021-01-02T02:34:55.939020+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2021-01-02T02:34:56.094836+00:00 heroku[web.1]: Process exited with status 143
+2021-01-02T02:57:07.281062+00:00 heroku[web.1]: Unidling
+2021-01-02T02:57:07.294272+00:00 heroku[web.1]: State changed from down to starting
+2021-01-02T02:57:09.952406+00:00 heroku[web.1]: Starting process with command `node index.js`
+2021-01-02T02:57:12.648255+00:00 app[web.1]: Tube app listening at http://localhost:4690
+2021-01-02T02:57:14.258486+00:00 heroku[web.1]: State changed from starting to up
+2021-01-02T02:57:15.427430+00:00 heroku[router]: at=info method=POST path="/" host=ollen-king-best.herokuapp.com request_id=388f0c83-ac5d-48de-86d4-d4d930257408 fwd="66.249.84.188" dyno=web.1 connect=0ms service=17ms status=404 bytes=384 protocol=https
+2021-01-02T02:57:56.751178+00:00 heroku[router]: at=info method=POST path="/" host=ollen-king-best.herokuapp.com request_id=4aea1e10-cf53-4826-b87f-acccb92de3c9 fwd="66.249.84.160" dyno=web.1 connect=1ms service=4ms status=404 bytes=384 protocol=https
+2021-01-02T03:32:26.777017+00:00 heroku[web.1]: Idling
+2021-01-02T03:32:26.778849+00:00 heroku[web.1]: State changed from up to down
+2021-01-02T03:32:28.054767+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2021-01-02T03:32:28.167389+00:00 heroku[web.1]: Process exited with status 143
+2021-01-02T08:42:18.000000+00:00 app[api]: Build started by user oli4.games@hotmail.com
+2021-01-02T08:42:32.869169+00:00 app[api]: Deploy 7ff9a0fc by user oli4.games@hotmail.com
+2021-01-02T08:42:32.869169+00:00 app[api]: Release v15 created by user oli4.games@hotmail.com
+2021-01-02T08:42:33.000000+00:00 app[api]: Build succeeded
+2021-01-02T08:42:34.288884+00:00 heroku[web.1]: State changed from down to starting
+2021-01-02T08:42:37.533366+00:00 heroku[web.1]: Starting process with command `node index.js`
+2021-01-02T08:42:41.005162+00:00 app[web.1]: Tube app listening at http://localhost:29569
+2021-01-02T08:42:41.981823+00:00 heroku[web.1]: State changed from starting to up
+2021-01-02T09:07:54.000000+00:00 app[api]: Build started by user oli4.games@hotmail.com
+2021-01-02T09:08:10.000000+00:00 app[api]: Build succeeded
+2021-01-02T09:08:10.013340+00:00 app[api]: Deploy df2a9349 by user oli4.games@hotmail.com
+2021-01-02T09:08:10.013340+00:00 app[api]: Release v16 created by user oli4.games@hotmail.com
+2021-01-02T09:08:11.178053+00:00 heroku[web.1]: Restarting
+2021-01-02T09:08:11.181688+00:00 heroku[web.1]: State changed from up to starting
+2021-01-02T09:08:13.515979+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2021-01-02T09:08:13.667375+00:00 heroku[web.1]: Process exited with status 143
+2021-01-02T09:08:14.222558+00:00 heroku[web.1]: Starting process with command `node index.js`
+2021-01-02T09:08:17.162386+00:00 app[web.1]: Tube app listening at http://localhost:3071
+2021-01-02T09:08:18.528377+00:00 heroku[web.1]: State changed from starting to up
