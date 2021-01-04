@@ -17,16 +17,16 @@ app.all('/', async (req, res) => {
     	para.append('Body', 'Got another request with the body: '+JSON.stringify(req.body));
     	console.log('Got another request with the body: '++JSON.stringify(req.body))
   }
-  /*para.append('From', "+14157413728");
-  para.append('To', "+31622339914");
-  let response = await fetch('https://api.twilio.com/2010-04-01/Accounts/ACd0ee4eaae06ee358c0c3f4a7e0160382/Messages.json', {
+  para.append('From', "whatsapp:+14155238886");
+  para.append('To', "whatsapp:+31622339914");
+  let response = await fetch('https://api.twilio.com/2010-04-01/Accounts/AC560f51cedc776774bd44d9c9688fbc43/Messages.json', {
     method: 'POST',
     body: para,
     headers: {
      'Authorization': 'Basic '+process.env.bs64_Twilio
      }
   });
-  console.log(response.status);*/
+  console.log(response.status);
   res.send(req.query['hub.challenge'])
 })
 
