@@ -1,6 +1,6 @@
 {
   "name": "pub-sub-hub",
-  "version": "1.8.2",
+  "version": "1.9.1",
   "description": "",
   "main": "index.js",
   "dependencies": {
@@ -20,6 +20,7 @@
     "escape-html": "^1.0.3",
     "etag": "^1.8.1",
     "express": "^4.17.1",
+    "fast-xml-parser": "^3.17.6",
     "finalhandler": "^1.1.2",
     "forwarded": "^0.1.2",
     "fresh": "^0.5.2",
