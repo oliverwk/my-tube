@@ -2,6 +2,7 @@ const express = require('express');
 var fetch = require('node-fetch');
 var bodyParser = require('body-parser');
 const { URLSearchParams } = require('url');
+var parser = require('fast-xml-parser');
 const app = express();
 const port = process.env.PORT;
 app.use(bodyParser.text({type:"*/*"}));
