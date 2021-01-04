@@ -15,7 +15,7 @@ app.all('/', async (req, res) => {
     	para.append('Body', 'Got a unsubscribe request with code: '+req.query['hub.challenge']+" and with the topic: "+req.query['hub.topic'].split("channel_id")[1]);
   } else {
     	para.append('Body', 'Got another request with the body: '+JSON.stringify(req.body));
-    	console.log('Got another request with the body: '++JSON.stringify(req.body))
+    	console.log('Got another request with the body: '+JSON.stringify(req.body))
   }
   para.append('From', "whatsapp:+14155238886");
   para.append('To', "whatsapp:+31622339914");
