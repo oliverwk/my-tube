@@ -15,9 +15,9 @@ app.all('/', async (req, res) => {
     	para.append('Body', 'Got a unsubscribe request with code: '+req.query['hub.challenge']+" and with the topic: "+req.query['hub.topic'].split("channel_id")[1]);
   } else {
     	para.append('Body', 'Got another request with the body: '+JSON.stringify(req.body));
-    	console.log('Got another request with the body: '+req.body)
+    	console.log('Got another request with the body: '++JSON.stringify(req.body))
   }
-  para.append('From', "+14157413728");
+  /*para.append('From', "+14157413728");
   para.append('To', "+31622339914");
   let response = await fetch('https://api.twilio.com/2010-04-01/Accounts/ACd0ee4eaae06ee358c0c3f4a7e0160382/Messages.json', {
     method: 'POST',
@@ -26,7 +26,7 @@ app.all('/', async (req, res) => {
      'Authorization': 'Basic '+process.env.bs64_Twilio
      }
   });
-  console.log(response.status);
+  console.log(response.status);*/
   res.send(req.query['hub.challenge'])
 })
 
