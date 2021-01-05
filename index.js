@@ -3,7 +3,7 @@ var fetch = require('node-fetch');
 var xmlparser = require('express-xml-bodyparser');
 const { URLSearchParams } = require('url');
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 const xml2jsDefaults = {
     explicitArray: false,
     normalize: false,
@@ -24,9 +24,15 @@ app.all('/', async (req, res) => {
   } else {
     	/*para.append('Body', 'Got another request with the body: '+JSON.stringify(req.body.feed));
     	console.log('Got another request with the body: '+JSON.stringify(req.body));*/
-      let video = req.body.feed.entry
-      para.append("Body", "Er is een nieuwe video van "+video.author.name+" met de titel ```'"+video.title+"'```\n"+video.link["$"].href);
-      console.log("Er is een nieuwe video van "+video.author.name+" met de titel '\x1b[4m"+video.title+"\x1b[0m'\n"+video.link["$"].href);
+      try {
+        let video = req.body.feed.entry
+        para.append("Body", "Er is een nieuwe video van "+video.author.name+" met de titel ```'"+video.title+"'```\n"+video.link["$"].href);
+        console.log("Er is een nieuwe video van "+video.author.name+" met de titel '\x1b[4m"+video.title+"\x1b[0m'\n"+video.link["$"].href);
+      } catch (e) {
+        console.log(e);
+        para.append('Body', 'Er ging iets mis met de XML dit de body: '+JSON.stringify(req.body.feed));
+      	console.log('Er ging iets mis met de XML dit de body:', JSON.stringify(req.body));
+      }
     }
   para.append('From', "whatsapp:+14155238886");
   para.append('To', "whatsapp:+31622339914");
@@ -42,5 +48,5 @@ app.all('/', async (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Tube app listening at http://localhost:${port}`)
+  console.log(`My-Tube app listening at https://localhost:${port}`)
 })

@@ -1,18 +1,20 @@
 {
   "name": "My-Tube",
-  "version": "2.1.2",
-  "description": "",
+  "version": "2.4.3",
+  "description": "Een expess server die voor Youtube abonomenten luistert",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "youtube",
+    "mytube"
+  ],
+  "author": "oliverwk",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "express-xml-bodyparser": "^0.3.0",
-    "node-fetch": "^2.6.1",
-    "url": "^0.11.0"
+    "node-fetch": "^2.6.1"
   }
 }
