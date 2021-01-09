@@ -18,7 +18,7 @@ app.all('/', async (req, res) => {
   console.log(req.query['hub.topic'] ? "Topic: "+req.query['hub.topic'] : "No topic provided");
   let para = new URLSearchParams();
   if (req.query['hub.mode'] == "subscribe") {
-  	para.append('Body', 'Got a subscribe request with code: '+req.query['hub.challenge']+" and with the channel: https://www.youtube.com/channel/"+req.query['hub.topic'].split("channel_id")[1]);
+  	para.append('Body', 'Got a subscribe request with code: '+req.query['hub.challenge']+" and with the channel: https://www.youtube.com/channel/"+req.query['hub.topic'].split("channel_id=")[1]);
   } else if (req.query['hub.mode'] == "unsubscribe") {
     	para.append('Body', 'Got a unsubscribe request with code: '+req.query['hub.challenge']+" and with the topic: "+req.query['hub.topic'].split("channel_id")[1]);
   } else {
